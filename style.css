@@ -1,0 +1,599 @@
+/* adding style here */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* ----------- Main Header ----------- */
+.main-header{
+    background:  white url("https://images.unsplash.com/photo-1442850473887-0fb77cd0b337?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b527796946e88db3a0ec912ebe1a613&auto=format&fit=crop&w=750&q=80") no-repeat fixed bottom;
+    background-size: cover;
+    padding: 25px;
+    color: white;
+    text-align: center ;
+    font-size: 18px;
+    height: 150px;
+
+
+}
+/* --------------- Search Area on Header ---------------- */
+.input{
+    margin: auto;
+    font-size: 25px;
+}
+input[type="text"]{
+    font-size: 18px;
+    text-align: center;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+input[type="button"]{
+    height: 30px;
+    width: 100px;
+    background-color: darkslateblue;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #778264;
+    color: white;
+}
+input[type='text']:focus,
+input[type='button']:focus{
+    border-bottom: 3px solid #5ED35E;
+}
+.button:hover {
+    opacity: 0.6;
+    transform: scale(0.9,0.9);
+}
+::placeholder{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+/* --------------- Main Footer ---------------- */
+.main-footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    line-height:10px;
+}
+.main-footer small {
+    color: orange;
+    line-height:0;
+    margin: 0;
+}
+.main-footer a{
+    color: orange;
+    line-height:10px;
+}
+/* ------------ Main Navigation ----------- */
+
+.main-nav{
+    background-color: #3b5998;
+    overflow: hidden;
+}
+.main-nav ul{
+    background-color: gray;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li{
+    float: left;
+    width: 200px;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+
+}
+.main-nav ul li a:hover{
+    background-color: #778264;
+}
+.main-nav ul li a.active{
+    background-color: #5ED35E;
+}
+.dropdown_list{
+    background-color: lightsalmon;
+    position: absolute; /* to stick with parent */
+     display: none;
+}
+.dropdown_list a{
+    display: block;
+    width: 300px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 25px;
+    font-size: 20px;
+
+}
+/* for hover effect */
+.dropdown:hover .dropdown_list{
+    display: none;
+}
+/* ---------- main section --------- */
+.main-section{
+    color:white;
+    font-size: 18px;
+    height:30px;
+    padding-bottom: 25px;
+    overflow: hidden;
+    animation: main-section 8s infinite linear;
+}
+@keyframes main-section{
+    0%,50%,100%{
+        background-color:black;
+    }
+    25%,75%{
+        background-color:rgba(0,0,80,0.5);
+    }
+}
+.main-section span{
+    color: darkgreen;
+}
+.main-section p{
+    padding: 0;
+    animation: p 15s infinite linear;
+    color: white;
+    font-size: 20px;
+}
+@keyframes p{
+    0%{transform: translateX(100%)}
+    100%{transform: translateX(-100%)}
+
+}
+.ch-div{
+    background-image: url("https://www.biography.com/.image/t_share/MTQ1NDY3ODI2Mjg1NTg2MTkz/steve-jobs---mini-biography.jpg");
+    height: 150px;
+    color: royalblue;
+    text-align: center;
+    padding: 250px;
+    margin: 0;
+    font-size: 25px;
+}
+
+/* ------------ about us ----------- */
+.about-section .main-article h2{
+    text-align: center;
+    color:#f5adb1;
+}
+.about-section .main-article p{
+    font-family: 'Gentium Basic', serif; /* important property */
+    text-align: justify;
+    margin:0 10px;
+}
+.about-section .main-article ul{
+    font-family: 'Gentium Basic', serif;
+    text-align: justify;
+    margin:5px 10px;
+}
+.about-section h2{
+    text-align: center;
+    color:#f5adb1;
+}
+.about-section .images img{
+    cursor: pointer;
+    width: 230px;
+    height: 200px;
+    border-radius: 50%;
+}
+.about-section .images img:hover{
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 0 15px #f591a8;
+}
+.about-section .images{
+    margin: 40px 70px;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    float: left;
+
+}
+.about-section .images h3{
+    color: #f5adb1;
+    font-family: 'Gentium Basic', serif;
+}
+.about-section .images p{
+    color:#3aa65e;
+    text-align: justify;
+    font-size: small;
+}
+ .fa{
+     padding: 20px;
+     font-size: 15px;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 50%;
+     width:5px;
+     height: 10px;
+     cursor: pointer;
+}
+.fa:hover {
+    opacity: 0.6;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+}
+
+/* ------------ Team ----------- */
+.team-section {
+    background-color: white;
+}
+.team-section .p p{
+    font-family: 'Gentium Basic', serif;
+    text-align: justify;
+    margin:50px 300px;
+    font-size: 20px;
+    color: #3aa65e;
+}
+.team-section h2 {
+    background: linear-gradient(to right,seagreen,red,seagreen);
+    height: 40px;
+    text-align: center;
+    color:white;
+    padding-top: 10px;
+    border-radius: 50%;
+}
+.team-section .team-article{
+
+}
+.team-section .team-article .teamm-article{
+    width: 600px;
+    height: 450px;
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+.team-section .team-article .teamr-article {
+    width: 600px;
+    height: 450px;
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+.team-section .team-article .teams-article {
+    width: 600px;
+    height: 450px;
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+.team-section .team-article .teamt-article {
+    width: 600px;
+    height: 450px;
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+.zoom img{
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    transition: all 4s;
+    padding: 25px;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+.team-article h3 {
+    color: #f5adb1;
+}
+
+/* ------------ Services ----------- */
+.services-section{
+    width: 1100px;
+    margin: auto;
+}
+.services-section .pdiv p{
+    font-family: 'Gentium Basic', serif;
+    text-align: justify;
+    margin:50px 300px;
+    font-size: 18px;
+    color: #3aa65e;
+}
+.services-section .pdiv span{
+    color: black;
+}
+ .services-article{
+    background: white url("http://www.indiaeducation.net/imagesvr_ce/9374/maxresdefault.jpg") no-repeat scroll top;
+    color: lavender;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #321e10;
+    font-family: 'Gentium Basic', serif;
+    text-align: justify;
+    font-size: 18px;
+}
+.services-article h2{
+    text-align: center;
+    font-size: 30px;
+    color:dodgerblue;
+}
+.servicess-article{
+    background: white url("http://www.mickeyshannon.com/photos/angel-falls.jpg") no-repeat fixed bottom;
+    color: lavender;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #321e10;
+    font-family: 'Gentium Basic', serif;
+    text-align: justify;
+    font-size: 18px;
+}
+.servicess-article h2{
+    text-align: center;
+    font-size: 30px;
+    color:dodgerblue;
+}
+.servicesp-article{
+    background: white url("https://i1.wp.com/www.solidsmack.com/wp-content/uploads/2018/08/EksoVest-overhead.jpg?ssl=1") no-repeat scroll bottom;
+    color: #3aa65e;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #321e10;
+    font-family: 'Gentium Basic', serif;
+    text-align: justify;
+    font-size: 18px;
+}
+.servicesp-article H2{
+    text-align: center;
+    font-size: 30px;
+    color:dodgerblue;
+}
+.servicesp-article #ch ol {
+    color: black;
+    font-size: 20px;
+}
+.servicesp-article #ch ol li h4{
+    color: red;
+    font-size: 20px;
+}
+.servicesp-article #ch ol li p{
+    color: #3aa65e;
+}
+/* ------------ Career ----------- */
+.career-section{
+    width: 1100px;
+    margin: auto;
+}
+.career-section #name p {
+    font-family: 'Gentium Basic', serif;
+    text-align: justify;
+    margin: 50px 300px;
+    font-size: 18px;
+    color: steelblue;
+}
+.career-article{
+    background: white url("https://www.urlaubsguru.de/wp-content/uploads/2015/12/urlaubsguru.de_victoria-faelle.jpg") no-repeat fixed bottom;
+    color: white;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #321e10;
+    font-family: 'Gentium Basic', serif;
+    text-align: justify;
+    font-size: 20px;
+}
+.career-article h3{
+    text-align: center;
+    color: #3aa65e;
+    font-size: 30px;
+}
+/* ------------ Login ----------- */
+.form-div {
+    background-color:#67b7e0;
+    background-size: cover;
+    width: 100%;
+    height:500px;
+    padding: 10px;
+    text-align: center;
+}
+.div{
+    width: 300px;
+    height: 325px;
+    margin: 50px auto;
+    background-color:#30b58a;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #5ED35E;
+}
+.div h2{
+    text-align: center;
+    color:black ;
+    margin-top:0 ;
+
+
+}
+.im img{
+    width: 60px;
+}
+.div .login .text{
+    font-size: 16px;
+    text-align: center;
+    height: 35px;
+    width: 230px;
+    border: none;
+    outline: none;
+    background-color: #315576;
+}
+.div .login .password{
+    margin-top: 5px;
+    width: 230px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-align: center;
+    background-color:#315576 ;
+}
+.div .login .submit{
+    width: 97%;
+    height: 22px;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: green;
+    border: none;
+    outline: none;
+}
+.div .login .submit:hover {
+    opacity: 0.8;
+}
+.div .login .label{
+    float: left;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.div .login .butt{
+    padding: 16px;
+    background-color: #f1f1f1;
+    height: 40px;
+    border-radius: 25px;
+}
+.div .login .butt .cancelbtn{
+    padding: 10px 18px;
+    background-color: #f44336;
+    float: left;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+.div .login .butt .cancelbtn:hover{
+    opacity: 0.8;
+}
+.div .login .butt .psw{
+    float: right;
+    margin-top: 10px;
+}
+
+/* ------------ Register ----------- */
+.form-register{
+    height:530px;
+    padding: 10px;
+    text-align: center;
+}
+.regi{
+    width: 460px;
+    height: 520px;
+    margin: 0 auto;
+    background-color:teal;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #5ED35E;
+}
+.regi h2{
+    width: 100%;
+    background-color: cadetblue;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+
+}
+.regi .register .form{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.icon {
+    padding: 10px;
+    margin: 5px;
+    background: dodgerblue;
+    width: 30px;
+    color: white;
+}
+.form{
+    width:100%;
+    height: 20px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+input[type='text']{
+    background-color: white;
+    outline: none;
+    color: black;
+}
+::placeholder{
+    color: #3b5998;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}
+input[type='password'] {
+    color: #3b5998;
+    width: 100%;
+    padding: 10px;
+    height: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+    border-bottom: 3px solid #5ED35E;
+}
+.regi .option{
+    padding: 10px;
+    background-color: #f1f1f1;
+    height: 15px;
+    border-radius: 25px;
+}
+
+#select{
+    background-color: chocolate;
+    border-radius: 50px;
+    float: right;
+}
+input[type='checkbox']{
+    float: left;
+    margin: 5px;
+}
+.check{
+    float: left;
+}
+.check span{
+color: goldenrod;
+    text-align: justify;
+    margin-left: 5px;
+}
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    height: 20px;
+    padding: 15px auto;
+    border-radius: 20px;
+}
